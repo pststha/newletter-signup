@@ -54,7 +54,7 @@ app.post("/success",(req,res)=>{
     res.redirect('/')
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("server running at port 3000");
 })
 // 2f9fda651142787c739b3149be46e551-us21    mailchimo api key
